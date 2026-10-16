@@ -1,0 +1,57 @@
+@use 'colors';
+@use 'typography' as t;
+@use 'spacing' as s;
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: s.$space-md;
+  margin: s.$space-md 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feature-list li {
+  padding: s.$space-md;
+  border: 2px solid colors.$border;
+  border-radius: s.$radius-lg;
+  background: colors.$surface;
+}
+
+.feature-list p {
+  margin: 0;
+}
+
+.subhead {
+  margin-block: s.$space-lg s.$space-sm;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 2px solid colors.$border;
+  border-radius: s.$radius-sm;
+  background: colors.$surface;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table caption {
+  padding: s.$space-xs s.$space-sm;
+  font-weight: t.$weight-semibold;
+  text-align: start;
+}
+
+.data-table th,
+.data-table td {
+  padding: s.$space-xs s.$space-sm;
+  border-block-start: 1px solid colors.$border;
+  text-align: start;
+  vertical-align: top;
+}
+
+.data-table thead th {
+  background: colors.$paper;
+}
