@@ -112,3 +112,20 @@
   color: colors.$muted;
   font-size: t.$text-sm;
 }
+
+.media-figure > img {
+  display: block;
+  width: 100%;
+  max-height: 18rem;
+  object-fit: cover;
+}
+
+.audio-player {
+  padding: s.$space-sm s.$space-md 0;
+}
+
+.audio-player audio {
+  display: block;
+  width: 100%;
+  min-height: s.$target-size;
+}
