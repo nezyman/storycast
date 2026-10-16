@@ -1,0 +1,25 @@
+{
+  "name": "storycast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "build": "sass sass/main.scss css/main.css --style=expanded --no-source-map",
+  "watch": "sass --watch sass/main.scss css/main.css --no-source-map"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nezyman/storycast.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nezyman/storycast/issues"
+  },
+  "homepage": "https://github.com/nezyman/storycast#readme",
+  "devDependencies": {
+    "sass": "^1.105.2"
+  }
+}
