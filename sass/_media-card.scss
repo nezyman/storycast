@@ -1,0 +1,61 @@
+@use 'colors';
+@use 'typography' as t;
+@use 'spacing' as s;
+
+.media-card-wrap {
+  container-type: inline-size;
+  container-name: card;
+}
+
+.media-card {
+  display: grid;
+  gap: s.$space-sm;
+  height: 100%;
+  padding: s.$space-sm;
+  border: 2px solid colors.$border;
+  border-radius: s.$radius-lg;
+  background: colors.$surface;
+}
+
+.media-card__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: s.$radius-sm;
+}
+
+.media-card__body h3 {
+  font-size: t.$text-lg;
+}
+
+.media-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: s.$space-2xs;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.media-card__meta li {
+  padding: s.$space-2xs s.$space-xs;
+  border: 1px solid colors.$border;
+  border-radius: s.$radius-sm;
+  background: colors.$paper;
+  color: colors.$muted;
+  font-size: t.$text-sm;
+}
+
+@container card (min-width: 34rem) {
+  .media-card {
+    grid-template-columns: 14rem 1fr;
+    align-items: start;
+  }
+}
+
+@container card (max-width: 20rem) {
+  .media-card__meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
