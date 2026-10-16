@@ -59,3 +59,22 @@
   background: transparent;
   color: colors.$primary;
 }
+button.transcript__time {
+  min-height: 2rem;
+  padding: 0 s.$space-2xs;
+  border: 2px solid colors.$primary;
+  border-radius: s.$radius-sm;
+  background: transparent;
+  cursor: pointer;
+}
+
+button.transcript__time:hover {
+  background: colors.$primary;
+  color: colors.$on-dark;
+}
+
+.transcript__item.is-active {
+  border-inline-start-color: colors.$primary;
+  background: #ece9ff;
+  font-weight: t.$weight-semibold;
+}
