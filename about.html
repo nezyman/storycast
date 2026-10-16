@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About &amp; access | StoryCast</title>
+  <meta name="description" content="What StoryCast is for, the accessibility features built into every story, and how to tell us when something does not work.">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">StoryCast</a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="story/market-in-sound.html">Featured story</a></li>
+          <li><a href="about.html" aria-current="page">About &amp; access</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="about-title">
+      <div class="hero__inner">
+        <p class="eyebrow">About &amp; access</p>
+        <h1 id="about-title">Stories are better when everyone can get in.</h1>
+        <p>StoryCast treats access as part of the story, not an add-on. Here is what we promise, how to use it, and how to tell us when we fall short.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="mission-title">
+      <h2 id="mission-title">Our mission</h2>
+      <div class="stack">
+        <p>To publish short audio and video stories that anyone can hear, watch or read, on any device, with any assistive technology.</p>
+        <p>A recording that only works if you can see the screen, or only if you can hear the speaker, leaves people out. So every StoryCast story ships with captions or a transcript from day one, and the pages around it are built to work with a keyboard, a screen reader and a zoomed-in browser.</p>
+        <p>The launch stories on this site are fictional pieces written for this project. The narration is a synthetic demo voice.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="features-title">
+      <h2 id="features-title">Accessibility features</h2>
+      <ul class="feature-list">
+        <li>
+          <h3>Captions</h3>
+          <p>Video includes English captions in WebVTT, switched on by default. Turn them off from the player if you prefer.</p>
+        </li>
+        <li>
+          <h3>Transcripts</h3>
+          <p>Every audio and video story has a full text transcript on the page, plus a plain-text download. Video transcripts include a description of the visuals.</p>
+        </li>
+        <li>
+          <h3>Keyboard friendly</h3>
+          <p>Everything works without a mouse, focus is always visible, and a skip link jumps past the navigation.</p>
+        </li>
+        <li>
+          <h3>Readable colour</h3>
+          <p>Text and controls meet WCAG 2.1 AA contrast. Links are underlined and the current page is marked by more than colour.</p>
+        </li>
+        <li>
+          <h3>Clear structure</h3>
+          <p>Landmarks, one top-level heading per page and a logical heading order help screen reader users move around quickly.</p>
+        </li>
+        <li>
+          <h3>Flexible layouts</h3>
+          <p>Layouts reflow when you zoom or use larger text, and the story cards adapt to the space they are given.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" aria-labelledby="engage-title">
+      <h2 id="engage-title">How to engage with a story</h2>
+      <ol class="stack">
+        <li><strong>Pick a format.</strong> Play the audio or video, or go straight to the transcript.</li>
+        <li><strong>Follow along.</strong> On the story page, the line being spoken is highlighted in the transcript.</li>
+        <li><strong>Jump around.</strong> Select any timestamp to replay from that moment.</li>
+        <li><strong>Take it with you.</strong> Download the transcript as plain text to read offline or in your own reader.</li>
+      </ol>
+
+      <h3 class="subhead">Keyboard guide</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-labelledby="keys-caption">
+        <table class="data-table">
+          <caption id="keys-caption">Keys that work on StoryCast pages</caption>
+          <thead>
+            <tr>
+              <th scope="col">Key</th>
+              <th scope="col">What it does</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Tab / Shift + Tab</th>
+              <td>Move forward or back through links, players and transcript timestamps. The first Tab on any page reveals the skip link.</td>
+            </tr>
+            <tr>
+              <th scope="row">Enter</th>
+              <td>Follow a link or press a button, including a transcript timestamp.</td>
+            </tr>
+            <tr>
+              <th scope="row">Space</th>
+              <td>Play or pause a focused player. Player shortcuts vary slightly between browsers.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="statement-title">
+      <h2 id="statement-title">Accessibility statement</h2>
+      <div class="stack">
+        <p>StoryCast aims to meet the Web Content Accessibility Guidelines (WCAG) 2.1 at level AA. This statement was last reviewed on <time datetime="2026-10-17">17 October 2026</time>.</p>
+        <h3>Known limitations</h3>
+        <ul class="stack">
+          <li>Video visuals are described in text, in the caption area and the transcript. There is no separate audio-described soundtrack yet.</li>
+          <li>Player controls come from your browser, so their look and shortcuts differ between browsers.</li>
+          <li>Captions are in English only.</li>
+        </ul>
+        <h3>Report a barrier</h3>
+        <p>If something here does not work for you, tell us what you were trying to do and what got in the way. Email <a href="mailto:access@storycast.example">access@storycast.example</a> and we will aim to reply within five working days.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>StoryCast is a course project built with semantic HTML, Sass and a little vanilla JavaScript.</p>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="story/market-in-sound.html">Featured story</a></li>
+          <li><a href="about.html">About &amp; access</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
