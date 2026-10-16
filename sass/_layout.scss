@@ -1,0 +1,144 @@
+@use 'colors';
+@use 'typography' as t;
+@use 'spacing' as s;
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin-block: 0 s.$space-xs;
+}
+
+h1 { font-size: t.$text-2xl; }
+h2 { font-size: t.$text-xl; }
+h3 { font-size: t.$text-lg; }
+
+p {
+  max-width: t.$measure;
+  margin-block: 0 s.$space-sm;
+}
+
+.site-header {
+  background: colors.$ink;
+  color: colors.$on-dark;
+}
+
+.site-header__inner,
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: s.$space-sm;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding: s.$space-sm s.$space-md;
+}
+
+.brand {
+  color: colors.$on-dark;
+  font-size: t.$text-lg;
+  font-weight: t.$weight-bold;
+  text-decoration: none;
+}
+
+.site-nav ul,
+.site-footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: s.$space-xs s.$space-md;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav a,
+.site-footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: s.$target-size;
+  color: colors.$on-dark;
+}
+
+.site-nav a[aria-current='page'] {
+  font-weight: t.$weight-bold;
+  text-decoration-thickness: 4px;
+  text-decoration-color: colors.$accent;
+}
+
+.site-header :focus-visible,
+.site-footer :focus-visible,
+.hero :focus-visible {
+  outline-color: colors.$accent;
+}
+
+.site-footer {
+  margin-block-start: s.$space-lg;
+  background: colors.$ink;
+  color: colors.$on-dark;
+}
+
+.hero {
+  background: colors.$primary-dark;
+  color: colors.$on-dark;
+}
+
+.hero__inner {
+  max-width: 72rem;
+  margin-inline: auto;
+  padding: s.$space-lg s.$space-md;
+}
+
+.eyebrow {
+  margin-block-end: s.$space-2xs;
+  color: colors.$accent;
+  font-size: t.$text-sm;
+  font-weight: t.$weight-bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section {
+  max-width: 72rem;
+  margin-inline: auto;
+  padding: s.$space-lg s.$space-md 0;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  gap: s.$space-md;
+  margin-block-start: s.$space-md;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: s.$space-xs;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: s.$target-size;
+  padding: s.$space-2xs s.$space-md;
+  border: 2px solid colors.$primary;
+  border-radius: s.$radius-sm;
+  background: colors.$primary;
+  color: colors.$on-dark;
+  font-weight: t.$weight-semibold;
+  text-decoration: none;
+}
+
+.button--on-dark {
+  border-color: colors.$accent;
+  background: colors.$accent;
+  color: colors.$ink;
+}
+
+.button--ghost-on-dark {
+  border-color: colors.$on-dark;
+  background: transparent;
+  color: colors.$on-dark;
+}
